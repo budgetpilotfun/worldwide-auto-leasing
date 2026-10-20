@@ -16,8 +16,8 @@ SITE = {
     "name": "Worldwide Auto Leasing",
     "domain": "jason.joe-miz.com",
     "url": "https://jason.joe-miz.com",
-    "phone": "(555) 555-0199",          # TODO real phone
-    "phone_tel": "+15555550199",        # TODO real phone, E.164
+    "phone": "(732) 534-4430",
+    "phone_tel": "+17325344430",
     "email": "info@worldwideautoleasing.com",   # TODO confirm
     "address": "Serving New York, New Jersey & Pennsylvania",  # TODO street address
     "hours": "Mon–Fri 9am–7pm · Sat 10am–5pm",

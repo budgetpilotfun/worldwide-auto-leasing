@@ -1,36 +1,77 @@
 title: Vehicles
 canonical: vehicles.html
-description: Browse lease-ready SUVs, sedans, trucks, EVs, minivans and convertibles from every major brand. Filter by body style, make and monthly payment.
+description: Lease any make and model through Worldwide Auto Leasing: SUVs, sedans, trucks, EVs, minivans and convertibles from 30+ brands, delivered free in NY, NJ and PA.
 body_class: page-vehicles
-scripts: <script src="js/vehicles-data.js"></script>
 ---
 <section class="page-hero"><div class="container">
   <span class="eyebrow eyebrow--light">Vehicles</span>
-  <h1>Every brand. One quote.</h1>
-  <p class="lead">Filter by body style, make and payment. Every card shows the full lease structure. If the car you want is not here, we will source it.</p>
+  <h1>Any make. Any model.<br>One quote.</h1>
+  <p class="lead">We are not a dealership with a lot to clear. Every brand below is available through our franchise dealer network, in the trim and color you want, at the current bank program. Pick one and tell us the car.</p>
 </div></section>
 
-<section class="section"><div class="container stack">
-  <div class="filters" role="search" aria-label="Filter vehicles">
-    <div class="field" style="grid-column: 1 / -1">
-      <span class="field__label">Body style</span>
-      <div class="chips" id="f-body">
-        <button class="chip" type="button" data-body="All" aria-pressed="true">All</button>
-        <button class="chip" type="button" data-body="SUV">SUVs</button>
-        <button class="chip" type="button" data-body="Sedan">Sedans</button>
-        <button class="chip" type="button" data-body="Truck">Trucks</button>
-        <button class="chip" type="button" data-body="Electric">Electric</button>
-        <button class="chip" type="button" data-body="Minivan">Minivans</button>
-        <button class="chip" type="button" data-body="Convertible">Convertibles</button>
-        <button class="chip" type="button" data-body="Luxury">Luxury</button>
-      </div>
-    </div>
-    <div class="field"><label for="f-make">Make</label><select id="f-make"><option value="">All makes</option></select></div>
-    <div class="field range"><label for="f-max">Max payment: <output id="f-max-out" for="f-max">Any</output></label><input id="f-max" type="range" min="250" max="1200" step="25" value="1200"></div>
-    <div class="field"><label for="f-sort">Sort</label><select id="f-sort"><option value="payment">Payment, low to high</option><option value="payment-desc">Payment, high to low</option><option value="name">Make &amp; model</option></select></div>
-    <div class="field"><span class="field__label">&nbsp;</span><button class="btn btn--outline" type="button" id="f-clear">Clear filters</button></div>
-    <div class="filters__count" id="f-count" aria-live="polite" style="grid-column: 1 / -1"></div>
+<section class="section"><div class="container">
+  <div class="section-head reveal">
+    <div><span class="eyebrow">Brands we lease</span><h2 class="section-title">Pick a brand to start your quote</h2></div>
+    <a class="btn btn--outline" href="custom-quote.html">Something else</a>
   </div>
-  <div class="grid grid--3" id="vehicle-grid"></div>
-  <p class="form__note">Payments shown are examples for well-qualified lessees under current manufacturer programs and exclude tax, DMV and bank fees unless noted. Photos are representative. Programs change monthly; your written quote is the number that counts.</p>
+  <div class="brand-grid" id="brand-grid">
+    <a class="brand-tile reveal" href="custom-quote.html?make=Acura">Acura</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Alfa%20Romeo">Alfa Romeo</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Audi">Audi</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=BMW">BMW</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Buick">Buick</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Cadillac">Cadillac</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Chevrolet">Chevrolet</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Chrysler">Chrysler</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Dodge">Dodge</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Ford">Ford</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Genesis">Genesis</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=GMC">GMC</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Honda">Honda</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Hyundai">Hyundai</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Infiniti">Infiniti</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Jaguar">Jaguar</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Jeep">Jeep</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Kia">Kia</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Land%20Rover">Land Rover</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Lexus">Lexus</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Lincoln">Lincoln</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Maserati">Maserati</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Mazda">Mazda</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Mercedes-Benz">Mercedes-Benz</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Mini">Mini</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Nissan">Nissan</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Porsche">Porsche</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Ram">Ram</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Subaru">Subaru</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Tesla">Tesla</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Toyota">Toyota</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Volkswagen">Volkswagen</a>
+    <a class="brand-tile reveal" href="custom-quote.html?make=Volvo">Volvo</a>
+  </div>
+</div></section>
+
+<section class="section section--alt"><div class="container">
+  <div class="section-head reveal"><div><span class="eyebrow">Body styles</span><h2 class="section-title">Or start with what you need</h2></div></div>
+  <div class="grid grid--3">
+    <a class="feature reveal" data-delay="1" href="custom-quote.html?body=SUV"><h3>SUVs &amp; crossovers</h3><p class="mb-0">Compact to three-row to full-size luxury. The most heavily subsidized lease segment most months.</p></a>
+    <a class="feature reveal" data-delay="2" href="custom-quote.html?body=Sedan"><h3>Sedans</h3><p class="mb-0">Commuters, hybrids and sport sedans. Strong loyalty programs from the German and Japanese banks.</p></a>
+    <a class="feature reveal" data-delay="3" href="custom-quote.html?body=Truck"><h3>Trucks</h3><p class="mb-0">Half-ton crew cabs for work or play, including commercial-use leases with business credit.</p></a>
+    <a class="feature reveal" data-delay="1" href="custom-quote.html?body=Electric"><h3>Electric &amp; plug-in</h3><p class="mb-0">EV lease credits pass through on many models. Ask which qualify this month.</p></a>
+    <a class="feature reveal" data-delay="2" href="custom-quote.html?body=Minivan"><h3>Minivans</h3><p class="mb-0">Odyssey, Sienna, Pacifica, Carnival. Family haulers with family-friendly payments.</p></a>
+    <a class="feature reveal" data-delay="3" href="custom-quote.html?body=Luxury"><h3>Luxury &amp; performance</h3><p class="mb-0">From a C-Class to a Range Rover or a 911. Executive demos and loaner leases when available.</p></a>
+  </div>
+</div></section>
+
+<section class="section"><div class="container grid grid--2">
+  <div class="reveal"><h2 class="section-title">How we source your car</h2>
+    <p>You tell us the year, make, model, trim and colors you would accept. We locate it at a franchise dealer in our network, often in another state if that is where the right car and the right price are, and run it on the bank's current program.</p>
+    <p>You see the full structure before anything is signed. The car is delivered to your door in New York, New Jersey or Pennsylvania at no charge.</p>
+    <a class="btn btn--primary" href="custom-quote.html">Start a custom quote</a>
+  </div>
+  <div class="faq reveal" data-delay="1">
+    <details open><summary>Can I order a car that has to be built?</summary><div>Yes. Factory orders are common on popular trims. We lock the program at order or at delivery, whichever is better for you, where the bank allows it.</div></details>
+    <details><summary>What about a car I already found at a dealer?</summary><div>Send us the stock number or window sticker. We will tell you if we can beat the structure on the same car.</div></details>
+    <details><summary>Do you lease used or certified vehicles?</summary><div>Some banks lease certified pre-owned. Ask on the quote form and we will tell you which brands offer it.</div></details>
+  </div>
 </div></section>

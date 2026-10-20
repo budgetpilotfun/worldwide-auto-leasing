@@ -7,7 +7,7 @@ window.WWAL = {
   FORM_ENDPOINT: "https://formsubmit.co/ajax/info@worldwideautoleasing.com",
   THANK_YOU_URL: "thank-you.html",
   BRAND: "Worldwide Auto Leasing",
-  PHONE: "(555) 555-0199",
+  PHONE: "(732) 534-4430",
   SMS_PROGRAM: "Worldwide Auto Leasing Alerts",
   CREDIT_APP_URL: ""   /* paste the xDesk credit application URL here */
 };
