@@ -1,0 +1,122 @@
+title: Auto Leasing in NY, NJ & PA
+canonical:
+description: Worldwide Auto Leasing finds your next car at the lowest lease payment and delivers it to your door anywhere in New York, New Jersey and Pennsylvania.
+body_class: page-home
+scripts: <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" defer></script><script src="js/vehicles-data.js"></script><script src="js/hero3d.js" defer></script>
+---
+<section class="hero3d">
+  <div class="hero3d__canvas" id="hero-canvas" aria-hidden="true"></div>
+  <div class="container hero3d__inner">
+    <div>
+      <span class="eyebrow eyebrow--light">Shop from home · We deliver to your door</span>
+      <h1>Drive more car.<br>Pay <span class="accent">less</span> a month.</h1>
+      <p class="tagline">{{tagline}}</p>
+      <p class="lead">Any make, any model. We negotiate the lease, handle every signature and deliver the car to your driveway. No dealership, no haggle, no games.</p>
+      <div class="hero3d__actions">
+        <a class="btn btn--primary btn--lg" href="specials.html">See this month's specials</a>
+        <a class="btn btn--outline-light btn--lg" href="vehicles.html">Browse all vehicles</a>
+      </div>
+      <div class="hero3d__stats">
+        <div class="stat"><span class="stat__num" data-count="30" data-suffix="+">0</span><span class="stat__label">Brands leased</span></div>
+        <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">States, free delivery</span></div>
+        <div class="stat"><span class="stat__num" data-count="24" data-suffix="h">0</span><span class="stat__label">Quote turnaround</span></div>
+        <div class="stat"><span class="stat__num">$0</span><span class="stat__label">Sign &amp; drive options</span></div>
+      </div>
+    </div>
+    <div class="hero3d__panel">
+      <form class="drop-form form" data-lead="Quick quote" novalidate>
+        <h3 class="mb-0">Get a quote in minutes</h3>
+        <p class="form__note mb-0">Tell us the car. We reply with real numbers.</p>
+        <div class="form__row">
+          <div class="field"><label for="h-name">Name</label><input id="h-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="h-phone">Mobile phone</label><input id="h-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(201) 555-0100" required><span class="field__error">Enter a 10-digit mobile number.</span></div>
+        </div>
+        <div class="field"><label for="h-email">Email</label><input id="h-email" name="email" type="email" autocomplete="email" required><span class="field__error">Enter a valid email.</span></div>
+        <div class="form__row">
+          <div class="field"><label for="h-vehicle">Vehicle you want</label><input id="h-vehicle" name="vehicle" placeholder="2026 BMW X3" required></div>
+          <div class="field"><label for="h-zip">ZIP</label><input id="h-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></div>
+        </div>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <label class="consent"><input type="checkbox" name="sms_consent" id="h-sms">
+          <span>By checking this box, I agree to receive <strong>text messages</strong> from {{name}} about my quote, vehicle availability and appointment reminders at the mobile number provided. Message frequency varies. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. Consent is not a condition of purchase. <a href="privacy.html">Privacy Policy</a> &amp; <a href="sms-terms.html">SMS Terms</a>.</span></label>
+        <button class="btn btn--primary btn--block" type="submit">Send my quote request</button>
+        <p class="form__note mb-0">No credit pull for a quote. By submitting you agree to be contacted by phone or email about your request.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track">
+  <span>BMW</span><span>Mercedes-Benz</span><span>Audi</span><span>Lexus</span><span>Genesis</span><span>Tesla</span><span>Toyota</span><span>Honda</span><span>Jeep</span><span>Ford</span><span>Ram</span><span>Chevrolet</span><span>Cadillac</span><span>Land Rover</span><span>Acura</span><span>Hyundai</span><span>Kia</span><span>Nissan</span><span>Volkswagen</span><span>Chrysler</span>
+  <span>BMW</span><span>Mercedes-Benz</span><span>Audi</span><span>Lexus</span><span>Genesis</span><span>Tesla</span><span>Toyota</span><span>Honda</span><span>Jeep</span><span>Ford</span><span>Ram</span><span>Chevrolet</span><span>Cadillac</span><span>Land Rover</span><span>Acura</span><span>Hyundai</span><span>Kia</span><span>Nissan</span><span>Volkswagen</span><span>Chrysler</span>
+</div></div>
+
+<section class="section section--alt" id="search">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Smart vehicle search</span><h2 class="section-title">Start with a body style</h2></div>
+      <a class="btn btn--outline" href="vehicles.html">All vehicles</a>
+    </div>
+    <div class="grid grid--4">
+      <a class="feature reveal" data-delay="1" href="vehicles.html?body=SUV"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l2-5h11l4 5v4H3z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3>SUVs</h3><p class="muted mb-0">Family size to full luxury.</p></a>
+      <a class="feature reveal" data-delay="2" href="vehicles.html?body=Sedan"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14l3-5h10l5 5v3H3z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3>Sedans</h3><p class="muted mb-0">Daily drivers and sport sedans.</p></a>
+      <a class="feature reveal" data-delay="3" href="vehicles.html?body=Truck"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8h11v8H2zM13 11h5l3 3v2h-8z"/><circle cx="6" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3>Trucks</h3><p class="muted mb-0">Work-ready crew cabs.</p></a>
+      <a class="feature reveal" data-delay="1" href="vehicles.html?body=Electric"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></div><h3>Electric</h3><p class="muted mb-0">EV lease credits applied.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="featured">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Featured specials</span><h2 class="section-title">This month's best leases</h2></div>
+      <a class="btn btn--outline" href="specials.html">View more specials</a>
+    </div>
+    <div class="grid grid--3" id="featured-grid"></div>
+    <p class="form__note mt-4">Advertised payments are examples for qualified lessees, exclude tax, DMV and bank fees, and are subject to change with manufacturer programs. Your quote will show every number.</p>
+  </div>
+</section>
+
+<section class="section section--ink" id="how">
+  <div class="container">
+    <span class="eyebrow eyebrow--light">How it works</span>
+    <h2>Three steps. Zero dealership visits.</h2>
+    <ol class="steps">
+      <li class="reveal" data-delay="1"><h3 style="color:#fff">Search</h3><p class="mb-0" style="color:rgba(255,255,255,.7)">Browse specials or tell us the exact car. If it is not on a lot, we source it from our dealer network.</p></li>
+      <li class="reveal" data-delay="2"><h3 style="color:#fff">Book</h3><p class="mb-0" style="color:rgba(255,255,255,.7)">Get our low pricing upfront, no haggle. Approve the numbers, e-sign the lease and credit app from your phone.</p></li>
+      <li class="reveal" data-delay="3"><h3 style="color:#fff">Enjoy</h3><p class="mb-0" style="color:rgba(255,255,255,.7)">Free delivery to your home or office anywhere in NY, NJ or PA. Plates, registration and insurance binder handled.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--alt" id="reviews-teaser">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow">Reviews</span><h2 class="section-title">Service oriented, not sales</h2></div>
+      <a class="btn btn--outline" href="reviews.html">Read all reviews</a>
+    </div>
+    <div class="grid grid--3">
+      <blockquote class="review reveal" data-delay="1"><span class="review__stars" aria-label="5 stars">★★★★★</span><p class="review__text">"Gave me the numbers straight over the phone, beat the dealer by a mile, and the car showed up in my driveway two days later."</p><span class="review__who"><span>Sample review · Replace with Google review</span></span></blockquote>
+      <blockquote class="review reveal" data-delay="2"><span class="review__stars" aria-label="5 stars">★★★★★</span><p class="review__text">"No games. Payment on the lease matched the quote to the dollar. Second car I have leased with them."</p><span class="review__who"><span>Sample review · Replace with Google review</span></span></blockquote>
+      <blockquote class="review reveal" data-delay="3"><span class="review__stars" aria-label="5 stars">★★★★★</span><p class="review__text">"They handled my lease return and the new lease the same afternoon. Easiest car deal I have done."</p><span class="review__who"><span>Sample review · Replace with Google review</span></span></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container grid grid--2">
+    <div class="reveal">
+      <span class="eyebrow">Worldwide</span>
+      <h2 class="section-title">Serving New York, New Jersey and Pennsylvania</h2>
+      <p>Worldwide Auto Leasing is an independent auto leasing broker. We work with the captive banks and franchise dealers for every major brand, which lets us shop the whole market for you instead of one showroom's inventory.</p>
+      <p>You get the manufacturer's current lease program, our negotiated price and free delivery across the tri-state area, with every number on one page before you sign anything.</p>
+      <ul class="trust"><li>All makes &amp; models</li><li>Free tri-state delivery</li><li>Lease returns accepted</li><li>Trade-ins welcome</li></ul>
+    </div>
+    <div class="faq reveal" data-delay="1">
+      <details open><summary>Do I have to visit a dealership?</summary><div>No. Everything from the quote to the signing happens by phone, text and e-sign. The car is delivered to you.</div></details>
+      <details><summary>Does getting a quote affect my credit?</summary><div>No. A quote is free and does not pull your credit. Credit is only checked when you submit the credit application for a specific deal.</div></details>
+      <details><summary>Can you get a car that is not listed?</summary><div>Yes. The specials are a sample of current programs. Send a custom quote request for any make, model, trim or color.</div></details>
+      <details><summary>What is due at signing?</summary><div>Usually the first payment, DMV fees and the bank acquisition fee. Sign-and-drive structures roll those into the payment. Your quote spells it out.</div></details>
+    </div>
+  </div>
+</section>

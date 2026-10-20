@@ -1,0 +1,36 @@
+title: Vehicles
+canonical: vehicles.html
+description: Browse lease-ready SUVs, sedans, trucks, EVs, minivans and convertibles from every major brand. Filter by body style, make and monthly payment.
+body_class: page-vehicles
+scripts: <script src="js/vehicles-data.js"></script>
+---
+<section class="page-hero"><div class="container">
+  <span class="eyebrow eyebrow--light">Vehicles</span>
+  <h1>Every brand. One quote.</h1>
+  <p class="lead">Filter by body style, make and payment. Every card shows the full lease structure. If the car you want is not here, we will source it.</p>
+</div></section>
+
+<section class="section"><div class="container stack">
+  <div class="filters" role="search" aria-label="Filter vehicles">
+    <div class="field" style="grid-column: 1 / -1">
+      <span class="field__label">Body style</span>
+      <div class="chips" id="f-body">
+        <button class="chip" type="button" data-body="All" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-body="SUV">SUVs</button>
+        <button class="chip" type="button" data-body="Sedan">Sedans</button>
+        <button class="chip" type="button" data-body="Truck">Trucks</button>
+        <button class="chip" type="button" data-body="Electric">Electric</button>
+        <button class="chip" type="button" data-body="Minivan">Minivans</button>
+        <button class="chip" type="button" data-body="Convertible">Convertibles</button>
+        <button class="chip" type="button" data-body="Luxury">Luxury</button>
+      </div>
+    </div>
+    <div class="field"><label for="f-make">Make</label><select id="f-make"><option value="">All makes</option></select></div>
+    <div class="field range"><label for="f-max">Max payment: <output id="f-max-out" for="f-max">Any</output></label><input id="f-max" type="range" min="250" max="1200" step="25" value="1200"></div>
+    <div class="field"><label for="f-sort">Sort</label><select id="f-sort"><option value="payment">Payment, low to high</option><option value="payment-desc">Payment, high to low</option><option value="name">Make &amp; model</option></select></div>
+    <div class="field"><span class="field__label">&nbsp;</span><button class="btn btn--outline" type="button" id="f-clear">Clear filters</button></div>
+    <div class="filters__count" id="f-count" aria-live="polite" style="grid-column: 1 / -1"></div>
+  </div>
+  <div class="grid grid--3" id="vehicle-grid"></div>
+  <p class="form__note">Payments shown are examples for well-qualified lessees under current manufacturer programs and exclude tax, DMV and bank fees unless noted. Photos are representative. Programs change monthly; your written quote is the number that counts.</p>
+</div></section>
